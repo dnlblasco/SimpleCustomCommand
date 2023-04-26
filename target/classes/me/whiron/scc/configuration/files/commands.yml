@@ -1,0 +1,26 @@
+#  ____   ____ ____
+# / ___| / ___/ ___|
+# \___ \| |  | |
+#  ___) | |__| |___
+# |____/ \____\____|
+#
+# Version 1.0
+
+commands:
+  example1:
+    commands:
+      - /allworlds
+    run_commands:
+      - '[console] msg %player% &aThis command works in all worlds'
+  example2:
+    commands:
+      - /spawn
+    run_commands:
+      - '[player] warp spawn'
+  example3:
+    commands:
+      - /onlynether
+    worlds:
+      - 'world_nether'
+    run_commands:
+      - '[console] msg %player% &aThis command only works in the nether world'
